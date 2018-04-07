@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
     <form action="https://formspree.io/grabczakkamil@gmail.com" method="post">
-        <label for="imie">Imię:</label><br />
-        <input type="text" name="imie" id="imie"><br />
+
+        <fieldset>
+            <legend>Personalia</legend>
+            <label for="imie">Imię:</label><br />
+            <input type="text" name="imie" id="imie"><br />
+
+            <label for="nazwisko">Nazwisko:</label><br />
+            <input type="text" name="nazwisko" id="nazwisko"><br />
+        </fieldset><br />
         
-        <label for="nazwisko">Nazwisko:</label><br />
-        <input type="text" name="nazwisko" id="nazwisko"><br />
+        <select name="select" id="choose">
+        <option value="value1" selected>Polska</option>
+        <option value="value2">Niemcy</option>
+        <option value="value3">Czechy</option>
+        </select><br />
         
-        <label for="email">Email:</label><br />
-        <input type="email" name="email"><br />
-        
-        <label for="tel">Telefon:</label><br />
-        <input type="tel" name="usrtel"><br />
-        
-        <label for="message">Wiadomość:</label><br />
-        <textarea name="wiadomosc" id="message" cols="30" rows="10"></textarea><br />
-        
-        <input type="submit" value="Wyślij">
+        <fieldset>
+            <legend>Kontakt</legend>
+            <label for="email">Email:</label><br />
+            <input type="email" name="email"><br />
+
+            <label for="tel">Telefon:</label><br />
+            <input type="tel" name="usrtel"><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Zgłoszenie</legend>
+            <label for="message">Wiadomość:</label><br />
+            <textarea name="wiadomosc" id="message" cols="30" rows="10"></textarea><br />
+
+            <input type="submit" value="Wyślij">
+        </fieldset>
     </form>
 </body>
+
 </html>
