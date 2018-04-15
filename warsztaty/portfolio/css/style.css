@@ -1,0 +1,88 @@
+/*GENERAL STYLES - START*/
+
+span {
+    color: #1ac056;
+}
+
+section {
+    padding: 0 80px 100px;
+}
+
+a {
+    transition: all 0.3s;
+}
+
+* {
+    box-sizing: border-box; /*top left-right bottom*/
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: #291f1a;
+    
+}
+/* GENERAL STYLES - END */
+
+/* MOJE PRÓBY */
+/*
+nav {
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    color: #291f1a;
+    
+    
+}
+.menu {
+    display: inline-block;
+    float: right;
+    color: #291f1a;
+    
+}
+*/
+
+
+/*navigation*/
+nav#main-nav {
+    
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    background-color: white;
+}
+#main-nav ul {
+    float: right;
+}
+#main-nav ul li {
+    display: inline-block;
+    padding: 20px 30px;
+}
+#main-nav ul li a {
+    text-decoration: none;
+    color: #1ac056;
+}
+
+#main-nav ul li a:hover {
+    color: #291f1a;
+}
+/*HEADER-START*/
+#main-header {
+    background-image: url("../img/header-background.jpg");
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.header-content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*HEADER-END*/
+/*Sekcja
