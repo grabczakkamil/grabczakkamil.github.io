@@ -1,15 +1,48 @@
-img {
+figure {
     height: 100%;
 }
 
 @media (max-width: 1170px) {
-    img {
+    figure {
         height: 70%;
+        background-image: url("../img/man-2.jpg");
     }
+   div {
+    display: inline-block;   
+    top: 80px;
+    left: 340px;
+    
 }
+    
+    h1 {
+    font-size: 18px;
+}
+
+    h2 {
+    font-size: 13px;
+}
+}
+    
 @media (max-width: 992px) {
-    img {
+    figure {
         height: 50%;
+        background-image: url("../img/man-1.jpg");
     }
+    div {
+    display: inline-block;
+    top: 320px;
+    left: 75px;
+    color: black;
+    text-align: center;
+        
+}
+    
+    h1 {
+    font-size: 18px;  
+}
+
+    h2 {
+    font-size: 13px;
+}
 }
 
