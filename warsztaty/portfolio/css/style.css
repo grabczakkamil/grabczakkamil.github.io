@@ -316,3 +316,22 @@ footer p {
     margin: 0px;
 }
 /*Sekcja "Kontakt" End-*/
+
+@media all and (max-width : 1200px) 
+
+@media all and (max-width : 992px)
+    .header-content {
+        padding: 10%;
+}  
+    
+@media all and (max-width : 768px)
+    {
+    section {
+        padding: 0 40px 50px;
+    }
+}
+@media all and (max-width : 576px) {
+    section {
+        padding: 0 10px 30px;
+    }
+}
