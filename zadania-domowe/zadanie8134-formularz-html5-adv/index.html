@@ -6,6 +6,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+   
+<h1>A Simple Form</h1>
+   <h2>Form Fundamentals</h2>
+    <form action="" method="post">
+       <fieldset>
+       <legend>Customer Info</legend>
+        <label for="imie">Name:</label>
+        <input type="text" name="Name:" id="imie" placeholder="Imię i nazwisko" autofocus required><br>
+        <label for="tel">Telephone:</label>
+        <input type="tel" name="telephone:" id="tel" placeholder="1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        <label for="email">Email address:</label>
+        <input type="email" name="Email:" id="email" placeholder="Wprowadź swój adres email" required>
+      </fieldset>
+    </form>
 </body>
 </html>
