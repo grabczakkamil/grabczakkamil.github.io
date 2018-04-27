@@ -1,0 +1,47 @@
+article {
+    background-color: darkseagreen;
+    width: 500px;
+    height: 600px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+h3 {
+    color: darkslategrey;
+    font-style: italic;
+}
+
+form {
+    padding: 20px;
+    color: antiquewhite;
+    width: 400px;
+    background-color: green;
+}
+
+form select, input[type="text"], input[type="tel"], input[type="email"], input[type="number"] {
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: darkseagreen;
+    color: black;
+    border: 1px solid darkolivegreen;
+}
+
+form input[type="number"] {
+    width: 50px;
+}
+
+form label {
+    display: block;
+}
+
+form input[type="submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
