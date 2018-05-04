@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
-<article>
-<h1>A Simple Form</h1>
-   <h3>Form Fundamentals</h3>
-    <form action="https://formspree.io/grabczakkamil@gmail.com" method="post">
-       <fieldset>
-       <legend>Customer Info</legend>
-        <label for="imie">Name:</label>
-        <input type="text" name="Name:" id="imie" placeholder="Imię i nazwisko" autofocus required><br>
-        <label for="tel">Telephone:</label>
-        <input type="tel" name="telephone:" id="tel" placeholder="1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
-        <label for="email">Email address:</label>
-        <input type="email" name="Email:" id="email" placeholder="Wprowadź swój adres email" multiple required>
-      </fieldset>
-      <fieldset>
-          <legend>Books</legend>
-          <select name="book" id="books">
-              <option value="Pan Tadeusz">Pan Tadeusz</option>
-              <option value="Potop">Potop</option>
-              <option value="Proces">Proces</option>
-              <option value="Kariera Nikodema Dyzmy">Kariera Nikodema Dyzmy</option>
-              <option value="Lalka">Lalka</option>
-          </select>
-          <label for="quantity">Quantity (Maximum 5):</label>
-          <input type="number" name="quantity:" id="quantity" min="1" max="5">
-      </fieldset>
-      <input type="submit" value="Submit">
-    </form>
-</article> 
+
+    <article>
+        <h1>A Simple Form</h1>
+        <h3>Form Fundamentals</h3>
+        <form action="https://formspree.io/grabczakkamil@gmail.com" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Customer Info</legend>
+                <label for="imie">Name:</label>
+                <input type="text" name="Name:" id="imie" placeholder="Imię i nazwisko" autofocus required><br>
+                <label for="tel">Telephone:</label>
+                <input type="tel" name="telephone:" id="tel" placeholder="1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                <label for="email">Email address:</label>
+                <input type="email" name="Email:" id="email" placeholder="Wprowadź swój adres email" multiple required>
+            </fieldset>
+            <fieldset>
+                <legend>Books</legend>
+                <input list="books">
+                <datalist id="books">
+            <option value="Pan Tadeusz"></option>
+            <option value="Potop"></option>
+            <option value="Proces"></option>
+            <option value="Kariera Nikodema Dyzmy"></option>
+            <option value="Lalka"></option> 
+        </datalist>
+                <label for="quantity">Quantity (Maximum 5):</label>
+                <input type="number" name="quantity:" id="quantity" min="1" max="5">
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </article>
 </body>
+
 </html>
