@@ -1,0 +1,85 @@
+/*GENERAL STYLES - START*/
+
+span {
+    color: #1ac056;
+}
+
+/*
+section {
+    padding: 0 80px 100px;
+}
+*/
+
+a {
+    transition: all 0.3s;
+}
+
+/*
+* {
+    box-sizing: border-box;
+    
+}
+*/
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: #291f1a;
+
+}
+h2 {
+    text-align: center;
+}
+
+/* GENERAL STYLES - END */
+
+
+/*Navigation - start*/
+
+#main-nav  {
+    padding: 20px 30px;
+}
+
+#main-nav li a {
+    color: #1ac056;
+}
+#main-nav li a:hover {
+    color: #291f1a;
+}
+
+/*Navigation - koniec*/
+#main-header {
+    background-image: url("../img/header-background.jpg");
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#main-header .header-content h1 {
+    font-size: 4em;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+/*    margin: 0;*/
+}
+
+#main-header .header-content h2 {
+    font-weight: 300;
+    font-size: 2em;
+    
+
+}
+
+#about img {
+    max-height: 350px;
+    max-width: 100%;
+    border: 10px solid #fff;
+    border-radius: 15px;
+
+}

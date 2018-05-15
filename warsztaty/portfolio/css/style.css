@@ -1,17 +1,5 @@
 /*GENERAL STYLES - START*/
 
-span {
-    color: #1ac056;
-}
-
-section {
-    padding: 0 80px 100px;
-}
-
-a {
-    transition: all 0.3s;
-}
-
 * {
     box-sizing: border-box;
     /*top left-right bottom*/
@@ -24,6 +12,18 @@ body {
     padding: 0;
     color: #291f1a;
 
+}
+
+span {
+    color: #1ac056;
+}
+
+section {
+    padding: 0 80px 100px;
+}
+
+a {
+    transition: all 0.3s;
 }
 
 h2 {
@@ -53,12 +53,11 @@ nav {
 
 /*navigation*/
 
-nav#main-nav {
-
+#main-nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: white;
+    background-color: #fff;
     z-index: 20;
 }
 
@@ -74,6 +73,7 @@ nav#main-nav {
 #main-nav ul li a {
     text-decoration: none;
     color: #1ac056;
+    font-weight: 300;
 }
 
 #main-nav ul li a:hover {
@@ -101,13 +101,12 @@ nav#main-nav {
     font-size: 4em;
     font-weight: 300;
     font-family: "Roboto", sans-serif;
-    margin: 0;
 }
 
 #main-header .header-content h2 {
     font-weight: 300;
     font-size: 2em;
-    margin: 0;
+   
 
 }
 
@@ -240,10 +239,12 @@ div.item-content-inner:hover {
     color: #fff;
     overflow: hidden;
 }
+/*
 h2 {
     text-align: left;
     font-size: 38px;
 }
+*/
 address {
     font-style: normal;
     line-height: 25px;

@@ -1,0 +1,144 @@
+/* GENERAL STYLES - START */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #291f1a;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    color: #1ac056;
+}
+
+section {
+    padding: 0 80px 100px; /* top left-right bottom */
+}
+
+a {
+    transition: all 0.3s;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* GENERAL STYLES - END */
+
+/* NAVIGATION - START */
+
+#main-nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+#main-nav ul {
+    float: right;
+}
+
+#main-nav ul li {
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    color: #1ac056;
+    font-weight: 300;
+}
+
+#main-nav ul li a:hover {
+    color: #291f1a;
+}
+
+/* NAVIGATION - END */
+
+/* HEADER - START */
+
+#main-header {
+    background-image: url("../img/header-background.jpg");
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+#main-header .header-content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#main-header .header-content h1 {
+    font-size: 4em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#main-header .header-content h2 {
+    font-weight: 300;
+    font-size: 2em;
+}
+
+/* HEADER - END */
+
+
+/* ABOUT - START */
+
+#about {
+    background-color: #f9fcfe;
+    overflow: hidden;
+}
+
+#about figure {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin: 0;
+}
+
+#about figure img {
+    max-height: 350px;
+    max-width: 100%;
+    border: 10px solid #fff;
+    border-radius: 15px;
+}
+
+#about article {
+    width: 50%;
+    float: left;
+}
+
+/* ABOUT - END */
+
+/* SKILLS - START */
+
+#skills p, #skills .skills-icons {
+    text-align: center;
+}
+
+#skills .skills-icons .skills-icons-item {
+    display: inline-block;
+}
+
+
+
+/* SKILLS - END */
+
+
+
+
+
+
+
+
+
+
