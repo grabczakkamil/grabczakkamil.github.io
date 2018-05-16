@@ -4,11 +4,9 @@ span {
     color: #1ac056;
 }
 
-/*
 section {
     padding: 0 80px 100px;
 }
-*/
 
 a {
     transition: all 0.3s;
@@ -50,6 +48,9 @@ h2 {
 }
 
 /*Navigation - koniec*/
+
+/*sekcja header - start*/
+
 #main-header {
     background-image: url("../img/header-background.jpg");
     height: 500px;
@@ -72,10 +73,22 @@ h2 {
 #main-header .header-content h2 {
     font-weight: 300;
     font-size: 2em;
-    
-
 }
 
+/*sekcja header - end*/
+/*sekcja O mnie - start*/
+
+#about {
+    background-color: #f9fcfe;
+}
+
+
+#about .section-header {
+    margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+}
 #about img {
     max-height: 350px;
     max-width: 100%;
@@ -83,3 +96,189 @@ h2 {
     border-radius: 15px;
 
 }
+
+#about .section-header {
+    margin-bottom: 15px;
+}
+/*sekcja O mnie - end*/
+
+/*sekcja moje umiejętności start*/
+#skills .section-header {
+    margin-top: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+#skills .section-header h2 {
+    margin-bottom: 30px;
+}
+#skills .icons {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+/*sekcja moje umiejętności end*/
+
+/*sekcja portfolio start*/
+
+#moje-portfolio {
+    background-color: #f9fcfe;
+}
+
+#moje-portfolio .section-header {
+    margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+}
+.portfolio-items {
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.project-items {
+    padding: 0;
+}
+#portfolio-item-1 {
+    background-image: url("../img/portfolio1.jpg");
+}
+#portfolio-item-2 {
+    background-image: url("../img/portfolio2.jpg");
+}
+
+#portfolio-item-3 {
+    background-image: url("../img/portfolio3.jpg");
+}
+.item-mask {
+    background-color: rgba(42, 61, 79, 0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    font-size: initial;
+}
+.item-mask:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+div.item-content {
+    border: 1px solid #fff;
+    margin: 10px;
+    height: 330px;
+    position: relative;
+}
+
+div.item-content-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+div.item-content-inner:hover {
+    color: #1ac056;
+}
+
+.link {
+    color: inherit;
+}
+/*sekcja portfolio end*/
+
+/*sekcja kontakt start*/
+#kontakt {
+    background-color: #213b50;
+    color: #fff;
+    overflow: hidden;
+    padding-top: 50px;
+}
+address {
+    font-style: normal;
+    line-height: 25px;
+    margin: 72px 0;
+}
+
+.social-icons {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    color: white;
+    font-size: 22px;
+    margin-right: 30px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.social-icons:hover {
+    color: #213b50;
+    background-color: #fff;
+    border: 1px solid #213b50;
+}
+
+.adres {
+    margin-top: 50px;
+}
+
+#kontakt .contact-form input, #kontakt .contact-form textarea {
+    width: 100%;
+    background-color: #2b4a64;
+    border: 0px;
+    margin-bottom: 15px;
+    border-color: #2b4a64;
+    padding: 15px;
+    color: white;
+}
+
+#kontakt .contact-form input:focus, #kontakt .contact-form textarea:focus {
+    background-color: #426684;
+}
+
+#kontakt .contact-form input[type="submit"] {
+    width: auto;
+    color: #fff;
+    font-weight: 600;
+    background-color: #1ac056;
+    float: right;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: 1px solid #1ac056;
+}
+
+#kontakt .contact-form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #1ac056;
+}
+
+.contact-data h2 {
+    float: left;
+    font-size: 38px;
+}
+
+.contact-form {
+    margin-top: 50px;
+}
+
+address a {
+    color: #1ac056;
+}
+/*sekcja kontakt end*/
+
+/*Footer Start*/
+footer {
+    background-color: #142634;
+    color: white;
+    padding-left: 80px;
+}
+
+footer p {
+    margin: 0px;
+}
+/*Footer End*/
