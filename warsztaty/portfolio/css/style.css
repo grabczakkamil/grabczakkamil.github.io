@@ -19,7 +19,7 @@ span {
 }
 
 section {
-    width:100%;
+    width: 100%;
     padding: 0 80px 100px;
 }
 
@@ -64,6 +64,14 @@ nav {
     width: 100%;
     background-color: #fff;
     z-index: 20;
+}
+
+#main-nav label {
+    display: none;
+}
+
+#main-nav input {
+    display: none;
 }
 
 #main-nav ul {
@@ -112,7 +120,7 @@ nav {
 #main-header .header-content h2 {
     font-weight: 300;
     font-size: 2em;
-   
+
 
 }
 
@@ -159,7 +167,7 @@ nav {
 }
 
 #skills .skills-icons .skills-icons-item {
-    display: inline-block;    
+    display: inline-block;
 }
 
 /*Sekcja "Moje umiejętności - End*/
@@ -169,10 +177,12 @@ nav {
 #moje-portfolio {
     background-color: #f9fcfe;
 }
+
 .portfolio-big {
     text-align: center;
     font-size: 0px;
 }
+
 .portfolio-items {
     height: 350px;
     width: 33.33%;
@@ -181,7 +191,7 @@ nav {
     position: relative;
     background-position: center;
     display: inline-block;
-/*    float: left;*/
+    /*    float: left;*/
 }
 
 #portfolio-item-1 {
@@ -239,11 +249,12 @@ div.item-content-inner:hover {
 /*Sekcja "Moje portfolio" End*/
 
 /*Sekcja "Kontakt" Start*/
+
 #kontakt {
     background-color: #213b50;
     color: #fff;
     overflow: hidden;
-/*    padding: 25px;*/
+    /*    padding: 25px;*/
 }
 
 address {
@@ -274,7 +285,8 @@ address {
     margin-top: 50px;
 }
 
-#kontakt .contact-form input, #kontakt .contact-form textarea {
+#kontakt .contact-form input,
+#kontakt .contact-form textarea {
     width: 100%;
     background-color: #2b4a64;
     border: 0px #2b4a64;
@@ -283,7 +295,8 @@ address {
     color: white;
 }
 
-#kontakt .contact-form input:focus, #kontakt .contact-form textarea:focus {
+#kontakt .contact-form input:focus,
+#kontakt .contact-form textarea:focus {
     background-color: #426684;
 }
 
@@ -304,7 +317,6 @@ address {
 }
 
 #kontakt .contact-data h2 {
-/*    float: left;*/
     font-size: 38px;
     text-align: left;
 }
@@ -313,6 +325,7 @@ address {
     width: 50%;
     float: left;
 }
+
 .contact-form {
     margin-top: 100px;
     width: 50%;
@@ -325,7 +338,6 @@ address a {
 
 /*Sekcja "Kontakt" End-*/
 
-
 footer {
     background-color: #142634;
     color: white;
@@ -336,20 +348,86 @@ footer p {
     margin: 0px;
 }
 
-@media all and (max-width : 1200px) 
+@media all and (max-width: 1200px) {
+    .portfo-items {
+        width: 50%;
+    }
+    .portfolio-items:last-child {
+        width: 100%;
+    }
+}
 
-@media all and (max-width : 992px)
+@media all and (max-width: 992px) {
     .header-content {
         padding: 10%;
-}  
-    
-@media all and (max-width : 768px)
-    {
+    }
+
+#main-nav label {
+        display: block;
+        background-color: #fff;
+        padding: 0 20px;
+        color: #1ac056;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    }
+
+    #main-nav ul {
+        display: none;
+    }
+
+    #main-nav #drop:checked + ul {
+        display: block;
+    }
+    #main-nav ul li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+    }
+    .main-header-content {
+        padding: 10%;
+    }
+    #about figure {
+        width: 100%;
+    }
+    #about figure img {
+        max-height: inherit;
+    }
+    #about article {
+        width: 100%;
+    }
+
+    .portfolio-items {
+        width: 100%;
+    }
+    .contact-data {
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .icons {
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 768px) {
     section {
         padding: 0 40px 50px;
     }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
 }
-@media all and (max-width : 576px) {
+
+@media all and (max-width: 576px) {
     section {
         padding: 0 10px 30px;
     }
