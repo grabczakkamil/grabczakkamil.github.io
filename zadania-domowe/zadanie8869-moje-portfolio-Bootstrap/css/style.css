@@ -20,7 +20,7 @@ body {
     color: #291f1a;
 
 }
-h2 {
+.section-name {
     text-align: center;
 }
 
@@ -260,7 +260,6 @@ address {
 }
 
 .contact-data h2 {
-    float: left;
     font-size: 38px;
 }
 
