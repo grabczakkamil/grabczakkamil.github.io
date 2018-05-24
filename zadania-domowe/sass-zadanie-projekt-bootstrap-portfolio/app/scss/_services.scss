@@ -1,0 +1,16 @@
+#services .fa {
+    @include btnStyle;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    font-size: 1.8em;
+    transition: $imgBackgroundAndMaskTransition;
+    cursor: pointer;
+}
+
+#services .fa:hover {
+    background-color: $mainColor;
+    color: $btnHoverColor;
+    transform: rotate(360deg);
+}

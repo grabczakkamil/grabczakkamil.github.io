@@ -1,0 +1,23 @@
+@mixin imgBackgroundStyle {
+    background-size: cover;
+	background-position: center;
+}
+
+@mixin btnStyle {
+    background-color: $btnHoverColor;
+	border: 1px solid $btnHoverColor;
+	color: $mainColor;
+}
+
+@mixin btnHoverStyle {
+    background-color: $mainColor;
+	border: 1px solid $btnHoverColor;
+	color: $btnHoverColor;
+}
+
+@mixin inputAndTextAreaStyle {
+    padding: 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+
+}

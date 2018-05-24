@@ -1,0 +1,22 @@
+#main-footer {
+    padding: 10px 0;
+    .copyright {
+        line-height: 50px;
+    }
+    .footer-nav {
+        line-height: 50px;
+        .footer-nav-item {
+            display: inline-block;
+            margin-right: 10px;
+            a {
+                color: $otherFontColor;
+                font-family: $headerFont;
+                text-decoration: none;
+                transition: $linkTransition;
+            }
+            a:hover {
+                color: $btnHoverColor;
+            }
+        }
+    }
+}

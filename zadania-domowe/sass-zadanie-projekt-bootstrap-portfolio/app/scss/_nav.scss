@@ -1,0 +1,25 @@
+#main-nav {
+    background-color: transparent;
+    transition: all .5s;
+    a.navbar-brand {
+        color: $mainColor;
+        font-family: $allTextFont;
+        font-size: 2em;
+    }
+    a {
+        color: $mainColor;
+        text-transform: uppercase;
+        font-family: $headerFont;
+        transition: $linkTransition;
+    }
+    a:hover {
+        color: $btnHoverColor;
+    }
+}
+
+#main-nav.scroll {
+    background-color: $btnMaskAndNavbarColor;
+    a:hover {
+        color: $otherFontColor;
+    }
+}

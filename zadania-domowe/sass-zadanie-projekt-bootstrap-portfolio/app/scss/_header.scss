@@ -1,0 +1,29 @@
+#main-header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header/pictures_on_the_wall.jpg);
+    @include imgBackgroundStyle;
+    height: 100vh;
+    color: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+        font-family: $allTextFont;
+        font-size: 3em;
+    }
+    h1 {
+        font-family: $headerFont;
+        font-size: 4em;
+        margin: 45px 0;
+    }
+    .read-more {
+        @include btnStyle;
+        font-family: $headerFont;
+        transition: $linkTransition;
+        padding: 15px 30px;
+    }
+    .read-more:hover {
+        @include btnHoverStyle;
+    }
+}

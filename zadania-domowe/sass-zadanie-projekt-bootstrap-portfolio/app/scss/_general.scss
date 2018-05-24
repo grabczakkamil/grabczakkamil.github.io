@@ -1,0 +1,55 @@
+body {
+    font-family: $otherFont;
+    color: $otherFontColor;
+}
+
+section {
+    padding: 60px 0;
+
+    .section-header {
+        margin-bottom: 70px;
+        text-align: center;
+        width: 100%;
+
+        .section-title {
+            font-family: $headerFont;
+            color: $fontHeaderColor;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        .section-caption {
+            font-family: $allTextFont;
+        }
+    }
+    h3 {
+        font-family: $headerFont;
+        color: $fontHeaderColor;
+        font-size: 1.2em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .img-circle {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .social-links {
+        width: 40px;
+        height: 40px;
+        background-color: $iconsColor;
+        display: inline-block;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        color: $mainColor;
+        transition: $imgBackgroundAndMaskTransition;
+        font-size: 1.8em;
+        margin: 5px;
+    }
+    .social-links:hover {
+        background-color: $btnHoverColor;
+        color: $mainColor;
+    }
+    .team-description {
+        margin-top: 40px;
+    }
+}
