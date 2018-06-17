@@ -96,6 +96,10 @@ textarea {
     margin: 0 0 0 20px;
 }
 
+select {
+	-moz-appearance: none;
+}
+
 select:invalid {
     color: #afafaf;
 }
