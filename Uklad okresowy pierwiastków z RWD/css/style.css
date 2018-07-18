@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    counter-reset: section2 56 section3 88 section4 71 section5 103 section;
+    margin: 60px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+#hel {
+    grid-column-start: 18;
+}
+
+#bor {
+    grid-column-start: 13;
+}
+
+#glin {
+    grid-column-start: 13;
+}
+
+#cer {
+    grid-column-start: 4;
+}
+
+#tor {
+    grid-column-start: 4;
+}
+
+.pierwiastek {
+    max-width: 60px;
+    max-height: 80px;
+    margin: 4px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.pierwiastek:hover {
+    transform: scale(1.75);
+    transition: transform 100ms linear;
+}
+
+p:nth-child(2) {
+    font-size: 14px;
+}
+
+.alkaiczny {
+    background-color: #e8a87c;
+}
+
+.szlachetny {
+    background-color: #97caef;
+}
+
+.ziem-alkaicznych {
+    background-color: #f8e9a1;
+}
+
+.polmetal {
+    background-color: #379683;
+}
+
+.niemetal {
+    background-color: #8ee4af;
+}
+
+.bloku-p {
+    background-color: #3feee6;
+}
+
+.przejsciowy {
+    background-color: #f172a1;
+}
+
+.lantanowce {
+    background-color: #e27d60;
+}
+
+.aktynowce {
+    background-color: #edb5bf;
+}
+
+.inny {
+    background-color: #adadad;
+}
+
+h2::before {
+    counter-increment: section;
+    content: counter(section) " ";
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.lantanowce h2::before {
+    counter-increment: section2;
+    content: counter(section2) " ";
+}
+
+.aktynowce h2::before {
+    counter-increment: section3;
+    content: counter(section3) " ";
+}
+
+.po-lantanowce h2::before {
+    counter-increment: section4;
+    content: counter(section4) " ";
+}
+
+.po-aktynowce h2::before {
+    counter-increment: section5;
+    content: counter(section5) " ";
+}
+
+@media (max-width: 992px) {
+
+    #hel,
+    #bor,
+    #glin {
+        grid-column-start: auto;
+    }
+    #cer {
+        grid-column-start: 2;
+        grid-row-start: 29;
+    }
+    #prazeodym {
+       grid-column-start: 1;
+        grid-row-start: 30; 
+    }
+    #neodym {
+       grid-column-start: 2;
+        grid-row-start: 30; 
+    }
+    #promet {
+       grid-column-start: 1;
+        grid-row-start: 31; 
+    }
+    #samar {
+        grid-column-start: 2;
+        grid-row-start: 31;
+    }
+    #europ {
+        grid-column-start: 1;
+        grid-row-start: 32;
+    }
+    #gadolin {
+        grid-column-start: 2;
+        grid-row-start: 32;
+    }
+    #terb {
+        grid-column-start: 1;
+        grid-row-start: 33;
+    }
+    #dysproz {
+        grid-column-start: 2;
+        grid-row-start: 33;
+    }
+    #holm {
+        grid-column-start: 1;
+        grid-row-start: 34;
+    }
+    #erb {
+        grid-column-start: 2;
+        grid-row-start: 34;
+    }
+    #tul {
+        grid-column-start: 1;
+        grid-row-start: 35;
+    }
+    #iterb {
+        grid-column-start: 2;
+        grid-row-start: 35;
+    }
+    #lutet {
+        grid-column-start: 1;
+        grid-row-start: 36;
+    }
+    #tor {
+        grid-column-start: 2;
+        grid-row-start: 45;
+    }
+    #protaktyn {
+        grid-column-start: 1;
+        grid-row-start: 46;
+    }
+    #uran {
+        grid-column-start: 2;
+        grid-row-start: 46;
+    }
+    #neptun {
+        grid-column-start: 1;
+        grid-row-start: 47;
+    }
+    #pluton {
+        grid-column-start: 2;
+        grid-row-start: 47;
+    }
+    #ameryk {
+        grid-column-start: 1;
+        grid-row-start: 48;
+    }
+    #kiur {
+        grid-column-start: 2;
+        grid-row-start: 48;
+    }
+    #berkel {
+        grid-column-start: 1;
+        grid-row-start: 49;
+    }
+    #kaliforn {
+        grid-column-start: 2;
+        grid-row-start: 49;
+    }
+    #einstein {
+        grid-column-start: 1;
+        grid-row-start: 50;
+    }
+    #ferm {
+        grid-column-start: 2;
+        grid-row-start: 50;
+    }
+    #mendelew {
+        grid-column-start: 1;
+        grid-row-start: 51;
+    }
+    #nobel {
+        grid-column-start: 2;
+        grid-row-start: 51;
+    }
+    #lorens {
+        grid-column-start: 1;
+        grid-row-start: 52;
+    }
+    .container {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pierwiastek {
+        max-width: 480px;
+        max-height: auto;
+    }
+    .pierwiastek h2,
+    .pierwiastek p {
+        display: inline-block;
+    }
+
+    p:nth-child(2) {
+        font-size: 25px;
+        margin: 0 20px 0 20px;
+    }
+
+    .pierwiastek:hover {
+        transform: scale(1.25);
+        transition: transform 100ms linear;
+    }
+    h2::before {
+        font-size: 14px;
+
+
+    }
+    @media (max-width: 576px) {
+        
+        #cer {
+        grid-column-start: 1;
+        grid-row-start: 58;
+    }
+    #prazeodym {
+       grid-column-start: 1;
+        grid-row-start: 59; 
+    }
+    #neodym {
+       grid-column-start: 1;
+        grid-row-start: 60; 
+    }
+    #promet {
+       grid-column-start: 1;
+        grid-row-start: 61; 
+    }
+    #samar {
+        grid-column-start: 1;
+        grid-row-start: 62;
+    }
+    #europ {
+        grid-column-start: 1;
+        grid-row-start: 63;
+    }
+    #gadolin {
+        grid-column-start: 1;
+        grid-row-start: 64;
+    }
+    #terb {
+        grid-column-start: 1;
+        grid-row-start: 65;
+    }
+    #dysproz {
+        grid-column-start: 1;
+        grid-row-start: 66;
+    }
+    #holm {
+        grid-column-start: 1;
+        grid-row-start: 67;
+    }
+    #erb {
+        grid-column-start: 1;
+        grid-row-start: 68;
+    }
+    #tul {
+        grid-column-start: 1;
+        grid-row-start: 69;
+    }
+    #iterb {
+        grid-column-start: 1;
+        grid-row-start: 70;
+    }
+    #lutet {
+        grid-column-start: 1;
+        grid-row-start: 71;
+    }
+    #tor {
+        grid-column-start: 1;
+        grid-row-start: 90;
+    }
+    #protaktyn {
+        grid-column-start: 1;
+        grid-row-start: 91;
+    }
+    #uran {
+        grid-column-start: 1;
+        grid-row-start: 92;
+    }
+    #neptun {
+        grid-column-start: 1;
+        grid-row-start: 93;
+    }
+    #pluton {
+        grid-column-start: 1;
+        grid-row-start: 94;
+    }
+    #ameryk {
+        grid-column-start: 1;
+        grid-row-start: 95;
+    }
+    #kiur {
+        grid-column-start: 1;
+        grid-row-start: 96;
+    }
+    #berkel {
+        grid-column-start: 1;
+        grid-row-start: 97;
+    }
+    #kaliforn {
+        grid-column-start: 1;
+        grid-row-start: 98;
+    }
+    #einstein {
+        grid-column-start: 1;
+        grid-row-start: 99;
+    }
+    #ferm {
+        grid-column-start: 1;
+        grid-row-start: 100;
+    }
+    #mendelew {
+        grid-column-start: 1;
+        grid-row-start: 101;
+    }
+    #nobel {
+        grid-column-start: 1;
+        grid-row-start: 102;
+    }
+    #lorens {
+        grid-column-start: 1;
+        grid-row-start: 103;
+    }
+
+        .container {
+
+            grid-template-columns: 1fr;
+        }
+
+    }
